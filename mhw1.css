@@ -1,0 +1,220 @@
+/*Bonadonna Stefano O46002083*/
+body{
+
+font-family: 'Oswald', sans-serif;
+
+}
+a{
+  text-decoration: none;
+color:blue;
+font-weight: bolder;
+font-style:italic;
+}
+nav{
+  margin:0;
+  height:4vh;
+ width:98vw;
+  background-color:rgba(0,139,139, .6);
+  position:fixed;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:1px;
+  z-index: 1;
+}
+nav a{
+color:darkcyan;
+  border:1px solid rgb(81, 83, 83);
+  padding-left:8vw; 
+  padding-right:8vw;
+  background-color: white;
+  padding-top:3px;
+ 
+}
+header{
+height:50vh;
+
+background-image:url('https://www.dhllive.com/sites/default/files/1024x450_284.jpg' );
+background-size:cover;
+position:relative;
+font-family:'Verdana', 'Tahoma', 'sans-serif';
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+z-index: -1;
+}
+.overlay{
+position:absolute;
+top:0px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+left:0px;
+
+height:100%;
+width:100%;
+}
+
+.sede{
+height: 20vh;
+width: 20vw;
+position:absolute;
+left:12vh;
+border:2px solid black;
+border-radius: 20px;
+}
+.service{
+color:white;
+border: 2px solid white;
+border-radius: 10px;
+padding:3px;
+z-index: 1;
+}
+.service:hover{
+  background-color: white;
+  color:black;
+}
+header h4{
+font-size:1em;
+z-index: 1;
+}
+#title{
+  z-index :1;
+  font-size: 1.5em;
+  
+}
+
+section{
+  height:170vh;
+  width:100vw;
+
+ font-size:17px;
+  background-color: white;
+ 
+  
+}
+section h3{
+  font-size:1.5em;
+  
+}
+.description{
+  font-size:1.2em;
+  border-bottom:3px solid darkcyan ;
+
+padding-bottom:20px;
+
+}
+
+.labi,.labc{
+  display:flex;
+}
+.labc p,.labi p{
+ 
+ margin-top:40px;
+ line-height:1.5em;
+  width:45vw;
+  
+}
+.labc{
+  border-bottom: 3px solid darkcyan;
+}
+.labc img,.labi img{
+  height:30vh;
+  width: 30vw;
+  margin-left:40px;
+  margin-right: 40px;
+  margin-bottom:40px;
+}
+.labi img{
+  margin-top: 15px;
+}
+
+footer{
+  height:17vh;
+  width:100vw;
+  background-color: rgba(0, 0,0, .7);
+  position:relative;
+color:white;
+display:flex;
+
+
+}
+.autore{
+  margin-left: 20vw}
+
+
+
+
+
+@media (max-width:600px){
+  nav{
+    position:fixed;
+    
+
+  }
+  nav a{
+    margin:0;
+    
+   padding-left:5vw;
+   padding-right:5vw;
+  
+  }
+  
+  .sede{
+    position:static;
+    height:5vh;
+   
+  }
+  section{
+    height:250vh;
+    
+  }
+
+  .description{
+    font-size:20px;
+    width:100vw;
+  }
+  .labc,.labi{
+    display:block;
+    padding-bottom:20px;
+  }
+  .labc p,.labi p{
+    display:block;
+    font-size:20px;
+    width: 100vw;
+  }
+  .labi{
+    position:relative;
+  }
+  .labi img{
+    position:absolute;
+top:30vh;
+  }
+.labi img,.labc img{
+    margin:0;
+    height:10vh;
+    
+  }
+  footer{
+  height:25vh;
+  display:block;
+  }
+  .autore{
+    display:block;
+    margin-left:0;
+  }
+}
+@media(max-width:1000px){
+  header{
+    height:60vh;
+    
+  }
+  .sede{
+    position:static;
+    height:10vh;
+    
+  }
+
+  
+}
